@@ -22,8 +22,8 @@ const sunLight = new THREE.DirectionalLight(0xFFFFFF, 2);
 sunLight.castShadow = true;
 sunLight.position.set(-1.6, 1, 0.4);
 sunLight.position.multiplyScalar(30);
-sunLight.shadow.mapSize.set(4096 * 4, 4096 * 4);
-sunLight.shadow.bias = -0.0001;
+sunLight.shadow.mapSize.set(1024, 1024);
+sunLight.shadow.bias = -0.0012;
 scene.add(sunLight);
 
 const sunlightShadowCamera = sunLight.shadow.camera;
